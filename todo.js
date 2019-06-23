@@ -1,23 +1,18 @@
-//a function to store todos
-function displayTodos(){
-  console.log("My Todos:", todos)
-}
-displayTodos();
-
-//a way to add new todos
-function addTodo(toDo){
-  todos.push(toDo);
-}
-addTodo("item 1");
-
-//a function to change a todo
-function changeToDo(position, newValue){
-  todos[position] = newValue;
-}
-changeToDo(0,"new item");
-
-//a function to delete a todo
-function deleteTodo(position){
-  todos.splice(position,1)
+var todoList = {
+  todos: ["item 1", "item 2", "item 3"],
+  displayTodos: function(){
+    console.log("My Todos:", this.todos);
+  },
+  addTodo: function(todo){
+    this.todos.push(todo);
+    this.displayTodos();
+  },
+  changeTodo: function(position, newValue){
+    this.todos[position] = newValue;
+    this.displayTodos();
+  },
+  deleteTodo: function(position){
+    this.todos.splice(position,1);
+    this.displayTodos();
+  }
 };
-deleteTodo(2);
