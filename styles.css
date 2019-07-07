@@ -7,6 +7,7 @@
  * 1. Correct the line height in all browsers.
  * 2. Prevent adjustments of font size after orientation changes in iOS.
  */
+/* @import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro:200&display=swap'); */
 
 html {
   line-height: 1.15; /* 1 */
@@ -196,7 +197,7 @@ textarea {
 button,
 input { /* 1 */
   overflow: visible;
-  padding: 16px 16px 16px 16px
+  padding: 16px 16px 16px 16px;
 }
 
 /**
