@@ -2,33 +2,37 @@
 <html>
 
 <head>
-	<title>Todo List</title>
+	<title>Todos</title>
 	<meta charset="UTF-8" />
+	 <link rel="stylesheet" type="text/css" href="styles.css">
+	 <link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
 </head>
 
 <body>
-	<h1>Todo List</h1>
-	<div>
+	<h1>Todos</h1>
+	<div class="center">
 		<button onclick="handlers.toggleAll()">Toggle All</button>
 	</div>
 
-<div>
+<div class="center">
 	<button onclick="handlers.addTodo()">Add</button>
 	<input id="addTodoTextInput" type="text">
 </div>
 
-<div>
+<div class="center">
 	<button onclick="handlers.changeTodo()">Change Todo</button>
 	<input id="changeTodoPositionInput" type="number"></input>
 	<input id="changeTodoTextInput" type="text">
 </div>
 
-<div>
+<div class="center">
 	<button onclick="handlers.toggleCompleted()">Toggle Completed</button>
 	<input id="toggleCompletedPositionInput" type="number">
 </div>
 
-<ul></ul>
+<div class="center">
+	<ul></ul>
+</div>
 
   <script src="todo.js"></script>
 </body>
